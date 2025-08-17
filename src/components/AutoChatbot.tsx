@@ -146,7 +146,7 @@ const AutoChatbot: React.FC = () => {
                     <MessageCircle className="w-6 h-6 text-black" />
                   </motion.div>
                   <div>
-                    <h3 className="text-white font-bold text-lg">ZENTRY AI</h3>
+                    <h3 className="text-white font-bold text-lg">VUENTY AI</h3>
                     <p className="text-gray-400 text-sm">Assistant Online</p>
                   </div>
                 </div>

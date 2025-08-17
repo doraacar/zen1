@@ -10,42 +10,122 @@ const DemoWebDesigns: React.FC<DemoWebDesignsProps> = ({ onBack }) => {
   const demoSites = [
     {
       id: 1,
-      title: 'BuildCraft Construction',
-      url: 'https://preview--build-solid-site.lovable.app',
+      title: 'RoofMaster',
+      url: 'https://roofingdemo.vercel.app/',
       image: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800',
-      description: 'Premium construction company website featuring dynamic hero sections, project showcases, and integrated quote systems. Built with advanced automation for lead capture and client management.',
-      category: 'Construction & Engineering',
+      description: 'Professional roofing company website featuring comprehensive service showcases, project galleries, and integrated quote systems. Built with advanced automation for lead capture and client management.',
+      category: 'Construction & Roofing',
       features: [
-        'Dynamic construction equipment imagery',
+        'Dynamic roofing project galleries',
         'Integrated quote request system',
-        'Project portfolio with case studies',
+        'Service portfolio with case studies',
         'Mobile-responsive design',
         'SEO-optimized content structure'
       ],
       stats: {
-        loadTime: '1.2s',
-        mobileScore: '98/100',
-        conversionRate: '+45%'
+        loadTime: '1.1s',
+        mobileScore: '97/100',
+        conversionRate: '+52%'
       }
     },
     {
       id: 2,
-      title: 'SmileCare Dental Clinic',
-      url: 'https://preview--smile-serene-studio.lovable.app',
-      image: 'https://images.pexels.com/photos/305568/pexels-photo-305568.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800',
-      description: 'Modern dental practice website with appointment booking automation, patient portal integration, and service showcase. Features clean medical aesthetics with trust-building elements.',
-      category: 'Healthcare & Medical',
+      title: 'LuxeBloom',
+      url: 'https://luxebloom.vercel.app/',
+      image: 'https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800',
+      description: 'Elegant luxury floral design website with sophisticated aesthetics, portfolio showcases, and booking automation. Features premium design elements and seamless user experience.',
+      category: 'Luxury & Lifestyle',
       features: [
-        'Automated appointment booking system',
-        'Patient testimonials integration',
-        'Service catalog with pricing',
-        'HIPAA-compliant contact forms',
-        'Professional medical design'
+        'Luxury floral portfolio display',
+        'Automated booking system',
+        'Premium design aesthetics',
+        'Client testimonials integration',
+        'Event planning tools'
       ],
       stats: {
         loadTime: '0.9s',
+        mobileScore: '99/100',
+        conversionRate: '+68%'
+      }
+    },
+    {
+      id: 3,
+      title: 'NoirForm',
+      url: 'https://verdant-panda-6dd33b.netlify.app',
+      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800',
+      description: 'Modern dark-themed business website with sleek design elements, advanced form systems, and professional presentation. Optimized for conversion and user engagement.',
+      category: 'Business & Professional',
+      features: [
+        'Dark theme professional design',
+        'Advanced form automation',
+        'Business service showcase',
+        'Client portal integration',
+        'Performance optimized'
+      ],
+      stats: {
+        loadTime: '1.0s',
         mobileScore: '96/100',
-        conversionRate: '+62%'
+        conversionRate: '+43%'
+      }
+    },
+    {
+      id: 4,
+      title: 'InkVeil Artistry',
+      url: 'https://inkveil-artistry-showcase.lovable.app/',
+      image: 'https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800',
+      description: 'Creative artistry showcase website featuring stunning visual galleries, artist portfolios, and commission booking systems. Designed to highlight artistic work with elegant presentation.',
+      category: 'Art & Creative',
+      features: [
+        'Artistic portfolio galleries',
+        'Commission booking system',
+        'Creative showcase design',
+        'Artist biography sections',
+        'Visual-first layout'
+      ],
+      stats: {
+        loadTime: '1.3s',
+        mobileScore: '95/100',
+        conversionRate: '+39%'
+      }
+    },
+    {
+      id: 5,
+      title: 'Luminous Dental',
+      url: 'https://luminous-dental-web.lovable.app/',
+      image: 'https://images.pexels.com/photos/305568/pexels-photo-305568.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800',
+      description: 'Modern dental practice website with appointment booking automation, patient portal integration, and comprehensive service showcase. Features clean medical aesthetics with trust-building elements.',
+      category: 'Healthcare & Medical',
+      features: [
+        'Automated appointment booking',
+        'Patient portal integration',
+        'Service catalog with pricing',
+        'HIPAA-compliant forms',
+        'Professional medical design'
+      ],
+      stats: {
+        loadTime: '0.8s',
+        mobileScore: '98/100',
+        conversionRate: '+71%'
+      }
+    },
+    {
+      id: 6,
+      title: 'Surea Trust',
+      url: 'https://surea-trustworthy-web.lovable.app/',
+      image: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800',
+      description: 'Professional trust and financial services website with secure client portals, service showcases, and automated consultation booking. Built with security and reliability as core features.',
+      category: 'Financial & Trust Services',
+      features: [
+        'Secure client portal access',
+        'Financial service showcase',
+        'Automated consultation booking',
+        'Trust-building design elements',
+        'Security-focused architecture'
+      ],
+      stats: {
+        loadTime: '1.0s',
+        mobileScore: '97/100',
+        conversionRate: '+56%'
       }
     }
   ];
@@ -90,7 +170,7 @@ const DemoWebDesigns: React.FC<DemoWebDesignsProps> = ({ onBack }) => {
               key={site.id}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
               className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 digital-border overflow-hidden group hover:border-cyan-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl"
             >
               {/* Category Badge */}
@@ -155,18 +235,11 @@ const DemoWebDesigns: React.FC<DemoWebDesignsProps> = ({ onBack }) => {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-gradient-to-r from-cyan-400 to-purple-500 text-black px-6 py-3 font-bold transition-all duration-300 neon-glow uppercase tracking-wide flex items-center gap-2"
+                    className="bg-gradient-to-r from-cyan-400 to-purple-500 text-black px-6 py-3 font-bold transition-all duration-300 neon-glow uppercase tracking-wide flex items-center gap-2 flex-1 justify-center"
                   >
                     VIEW LIVE SITE
                     <ExternalLink className="w-4 h-4" />
                   </motion.a>
-                  <motion.button
-                    whileHover={{ scale: 1.05, y: -2 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-6 py-3 font-bold transition-all duration-300 uppercase tracking-wide"
-                  >
-                    CASE STUDY
-                  </motion.button>
                 </div>
               </div>
             </motion.div>

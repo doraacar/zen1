@@ -46,7 +46,7 @@ const Hero: React.FC<HeroProps> = ({ onViewExamples }) => {
           >
             <div className="flex items-center justify-center mb-4">
               <h1 className="text-7xl md:text-9xl font-black text-white tracking-tight neon-text">
-                ZENTRY
+                VUENTY
               </h1>
             </div>
             
@@ -103,7 +103,7 @@ const Hero: React.FC<HeroProps> = ({ onViewExamples }) => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               onClick={onViewExamples}
-              className="bg-gray-900/50 border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-12 py-4 font-bold text-lg transition-all duration-300 uppercase tracking-wide mr-6 mb-4"
+              className="bg-gray-900/50 border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-12 py-4 font-bold text-lg transition-all duration-300 uppercase tracking-wide mr-6 mb-4 w-48"
             >
               VIEW EXAMPLES
             </motion.button>
@@ -114,7 +114,7 @@ const Hero: React.FC<HeroProps> = ({ onViewExamples }) => {
                 const contactSection = document.getElementById('contact');
                 contactSection?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="bg-gradient-to-r from-cyan-400 to-purple-500 text-black px-12 py-4 font-bold text-lg transition-all duration-300 neon-glow uppercase tracking-wide"
+              className="bg-gradient-to-r from-cyan-400 to-purple-500 text-black px-12 py-4 font-bold text-lg transition-all duration-300 neon-glow uppercase tracking-wide w-48"
             >
               CONTACT US
             </motion.button>

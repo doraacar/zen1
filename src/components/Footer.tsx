@@ -72,10 +72,10 @@ const Footer: React.FC = () => {
               <div className="flex items-center gap-3 mb-8">
                 <img 
                   src="/ChatGPT Image 29 Haz 2025 23_37_34.png" 
-                  alt="ZENTRY Logo" 
+                  alt="VUENTY Logo" 
                   className="w-12 h-12 object-contain neon-glow"
                 />
-                <span className="text-2xl font-black text-white tracking-tight">ZENTRY</span>
+                <span className="text-2xl font-black text-white tracking-tight">VUENTY</span>
               </div>
               <p className="text-gray-400 mb-8 text-sm leading-relaxed font-light">
                 Advanced automation systems engineered for maximum efficiency. 
@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
               <div className="space-y-4">
                 <div className="flex items-center gap-4 text-sm text-gray-400">
                   <Mail className="w-4 h-4 text-cyan-400" />
-                  protocol@zentry.com
+                  protocol@vuenty.com
                 </div>
                 <div className="flex items-center gap-4 text-sm text-gray-400">
                   <Phone className="w-4 h-4 text-cyan-400" />
@@ -198,7 +198,7 @@ const Footer: React.FC = () => {
         <div className="max-w-7xl mx-auto px-8 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-400 font-light">
-              © 2025 ZENTRY. ALL SYSTEMS OPERATIONAL.
+              © 2025 VUENTY. ALL SYSTEMS OPERATIONAL.
             </p>
             <p className="text-sm text-gray-400 font-light">
               ENGINEERED FOR MAXIMUM EFFICIENCY.
